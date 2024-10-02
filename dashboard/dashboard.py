@@ -24,6 +24,11 @@ st.dataframe(df_day_new.head())
 
 # Visualisasi penyewa sepeda berdasarkan "weathersit"
 st.subheader("Jumlah Penyewa Berdasarkan Cuaca")
+
+st.write("""
+Bagaimana cuaca berpengaruh terhadap jumlah peminjaman sepeda?
+""")
+
 fig1 = plt.figure(figsize=(12, 10))
 gs1 = GridSpec(4, 4, fig1, wspace=0.5, hspace=0.5)
 plt.suptitle("Jumlah Penyewa Berdasarkan Cuaca", fontsize=16)
@@ -61,6 +66,11 @@ Oleh karena itu, dapat disimpulkan bahwa pada cuaca cerah ("Clear Cuaca") menunj
 
 # Visualisasi penyewa sepeda berdasarkan "workingday"
 st.subheader("Jumlah Penyewa Berdasarkan Hari Kerja dan Hari Libur")
+
+st.write("""
+Bagaimana perbandingan penggunaan sepeda di hari kerja dan hari libur? Kapan paling banyak peminjam sepeda di antara kedua waktu tersebut?
+""")
+
 fig2 = plt.figure(figsize=(13, 10))
 gs2 = GridSpec(4, 4, fig2, wspace=0.5, hspace=0.5)
 plt.suptitle("Jumlah Penyewa berdasarkan Hari Kerja dan Hari Libur", fontsize=16)
