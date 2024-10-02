@@ -45,6 +45,16 @@ plt.ylabel("Jumlah Penyewa Registered", fontsize=12)
 
 st.pyplot(fig1)
 
+st.subheader("Keterangan")
+st.write("""
+Berdasarkan hasil visualisasi data di atas, diperoleh bahwa:
+
+a. Jumlah penyewa registered naik pada saat cuaca cerah, dan turun pada saat cuaca hujan salju ringan.
+b. Jumlah penyewa non-registered(casual) naik pada saat cuaca cerah dan turun pada saat cuaca hujan salju ringan.
+c. Jumlah penyewa registered maupun non-registered(casual) tetap moderat pada cuaca kabut/berawan.
+
+Oleh karena itu, dapat disimpulkan bahwa pada cuaca cerah ("Clear Cuaca") menunjukkan median penyewaan sepeda yang lebih tinggi dibandingkan dengan cuaca berkabut/berawan ("Mist_Cloudy") dan jauh lebih tinggi dibandingkan dengan cuaca hujan salju ringan ("Light_Snow_Rain").
+""")
 # Visualisasi penyewa sepeda berdasarkan "workingday"
 st.subheader("Jumlah Penyewa Berdasarkan Hari Kerja dan Hari Libur")
 fig2 = plt.figure(figsize=(13, 10))
@@ -67,12 +77,21 @@ plt.xlabel("Hari Kerja (1) vs Hari Libur (0)", fontsize=12)
 plt.ylabel("Jumlah Penyewa Registered", fontsize=12)
 
 st.pyplot(fig2)
+st.subheader("Kesimpulan")
+st.write("""
+Berdasarkan hasil visualisasi data di atas, diperoleh bahwa:
+
+a. Jumlah penyewa non-registered memiliki total penyewa lebih tinggi pada hari libur
+b. jumlah penyewa registered memiliki total penyewa lebih tinggi pada hari kerja
+
+Oleh karena, dapat disimpulkan bahwa jumlah penyewaan sepeda pada hari kerja dan hari libur relatif seimbang, meskipun hari kerja memiliki median yang sedikit lebih tinggi.
+""")
 
 # Conclusion section
 st.subheader("Kesimpulan")
 st.write("""
-1. Visualisasi menunjukkan bahwa cuaca memiliki dampak yang signifikan terhadap jumlah peminjam sepeda.
-2. Terdapat perbedaan jelas antara peminjaman sepeda pada hari kerja dan hari libur.
+1. Berdasarkan hasil visualisasi data yang telah dilakukan, diperoleh kesimpulan bahwa cuaca memiliki pengaruh signifikan terhadap jumlah peminjaman sepeda. Pada cuaca cerah, jumlah penyewaan sepeda cenderung lebih tinggi, baik untuk pengguna non-registered(casual) maupun pengguna registered. Sebaliknya, pada cuaca hujan salju ringan, jumlah penyewaan sepeda menurun drastis. Dengan demikian, Pengguna non-registered(casual) sangat dipengaruhi oleh kondisi cuaca, sementara pengguna registered cenderung lebih konsisten meskipun dalam cuaca buruk.
+2. Berdasarkan hasil visualisasi data yang telah dilakukan, diperoleh bahwa penggunaan sepeda pada hari kerja dan hari libur menunjukkan perbedaan pola antara pengguna non-registered(casual) dan pengguna registered. Pengguna non-registered(casual) lebih banyak menyewa sepeda pada hari libur, sedangkan pengguna registered lebih sering menyewa sepeda pada hari kerja. Dengan demikian, jumlah peminjam sepeda paling banyak terjadi pada hari kerja untuk pengguna registered, sedangkan bagi pengguna non-registered(casual), hari libur adalah waktu dengan jumlah penyewaan terbanyak.
 """)
 st.caption('Copyright (c), created by Meirida Karisma Putri')
 
