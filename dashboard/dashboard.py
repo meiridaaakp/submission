@@ -9,7 +9,7 @@ from matplotlib.gridspec import GridSpec
 sns.set(style='dark')
 
 # Load dataset
-df_day = pd.read_csv("day.csv")
+df_day = pd.read_csv("dashboard/day.csv")
 
 # Streamlit configuration
 st.set_page_config(page_title="BIKERS", page_icon="🚴‍♂️", layout="wide")
