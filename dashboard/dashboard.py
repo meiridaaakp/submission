@@ -5,7 +5,7 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 from matplotlib.gridspec import GridSpec
-matplotlib inline
+
 sns.set(style='dark')
 
 # Load dataset
