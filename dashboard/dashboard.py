@@ -3,10 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-from babel.numbers import format_currency
-from matplotlib.gridspec import GridSpec
+import os
 
 sns.set(style='dark')
+
+# Print the files in the dashboard directory
+print("Files in 'dashboard' directory:", os.listdir("dashboard"))
 
 # Load dataset
 df_day = pd.read_csv("dashboard/day_data.csv")
@@ -42,8 +44,6 @@ st.pyplot(fig)
 
 # Conclusion section
 st.subheader("Kesimpulan")
-st.write("""
-1. Berdasarkan hasil visualisasi data yang telah dilakukan, diperoleh kesimpulan bahwa cuaca memiliki pengaruh signifikan terhadap jumlah peminjaman sepeda. Pada cuaca cerah, jumlah penyewaan sepeda cenderung lebih tinggi, baik untuk pengguna non-registered(casual) maupun pengguna registered. Sebaliknya, pada cuaca hujan salju ringan, jumlah penyewaan sepeda menurun drastis. Dengan demikian, Pengguna non-registered(casual) sangat dipengaruhi oleh kondisi cuaca, sementara pengguna registered cenderung lebih konsisten meskipun dalam cuaca buruk.
-2. Berdasarkan hasil visualisasi data yang telah dilakukan, diperoleh bahwa penggunaan sepeda pada hari kerja dan hari libur menunjukkan perbedaan pola antara pengguna non-registered(casual) dan pengguna registered. Pengguna non-registered(casual) lebih banyak menyewa sepeda pada hari libur, sedangkan pengguna registered lebih sering menyewa sepeda pada hari kerja. Dengan demikian, jumlah peminjam sepeda paling banyak terjadi pada hari kerja untuk pengguna registered, sedangkan bagi pengguna non-registered(casual), hari libur adalah waktu dengan jumlah penyewaan terbanyak.
-""")
+st.write("""...""")
 st.caption('Copyright (c), created by Meirida Karisma Putri')
+
