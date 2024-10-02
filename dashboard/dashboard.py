@@ -57,6 +57,8 @@ c. Jumlah penyewa registered maupun non-registered(casual) tetap moderat pada cu
 
 Oleh karena itu, dapat disimpulkan bahwa pada cuaca cerah ("Clear Cuaca") menunjukkan median penyewaan sepeda yang lebih tinggi dibandingkan dengan cuaca berkabut/berawan ("Mist_Cloudy") dan jauh lebih tinggi dibandingkan dengan cuaca hujan salju ringan ("Light_Snow_Rain").
 """)
+
+
 # Visualisasi penyewa sepeda berdasarkan "workingday"
 st.subheader("Jumlah Penyewa Berdasarkan Hari Kerja dan Hari Libur")
 fig2 = plt.figure(figsize=(13, 10))
