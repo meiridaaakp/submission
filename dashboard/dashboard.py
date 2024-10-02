@@ -26,6 +26,8 @@ st.dataframe(df_day_new.head())
 st.subheader("Jumlah Penyewa Berdasarkan Cuaca")
 
 st.write("""
+Pertanyaan 1:
+
 Bagaimana cuaca berpengaruh terhadap jumlah peminjaman sepeda?
 """)
 
@@ -68,6 +70,8 @@ Oleh karena itu, dapat disimpulkan bahwa pada cuaca cerah ("Clear Cuaca") menunj
 st.subheader("Jumlah Penyewa Berdasarkan Hari Kerja dan Hari Libur")
 
 st.write("""
+Pertanyaan 2:
+
 Bagaimana perbandingan penggunaan sepeda di hari kerja dan hari libur? Kapan paling banyak peminjam sepeda di antara kedua waktu tersebut?
 """)
 
